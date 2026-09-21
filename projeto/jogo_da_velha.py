@@ -72,7 +72,7 @@ class JogoDaVelha:
             if all(self.tabuleiro[j][i] == jogador for j in range(3)):
                 return True
                 
-        # Verifica diagonais
+        
         if all(self.tabuleiro[i][i] == jogador for i in range(3)):
             return True
         if all(self.tabuleiro[i][2 - i] == jogador for i in range(3)):
